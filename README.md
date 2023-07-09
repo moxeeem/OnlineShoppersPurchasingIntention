@@ -29,24 +29,28 @@ The dataset consists of rows that represent visit "sessions" of users on an e-co
 **Target Variable**
 - `Revenue` (categorical, bool) : whether the user has made a purchase
 
-**Features**
-- `Administrative` (numerical, int): the number of pages of this type (administarive) that the user visited
-- `Administrative_Duration` (numerical, float): the amount of time spent in this category of pages
-- `Informational` (numerical, int): the number of pages of this type (informational) that the user visited
-- `Informational_Duration` (numerical, float): the amount of time spent in this category of pages
-- `ProductRelated` (numerical, int): the number of pages of this type (product related) that the user visited
-- `ProductRelated_Duration` (numerical, float): the amount of time spent in this category of pages
-- `BounceRates` (numerical, float): the percentage of visitors who enter the website through that page and exit without triggering any additional tasks
-- `ExitRates` (numerical, float): the percentage of pageviews on the website that end at that specific page
-- `PageValues` (numerical, float): the average value of the page averaged over the value of the target page and/or the completion of an eCommerce
-- `SpecialDay` (numerical, float): the closeness of the site visiting time to a specific special day
-- `Month` (categorical, object): month of the year of the visiting site
-- `OperatingSystems` (categorical, int): user's operating system
-- `Browser` (categorical, int): user's browser
-- `Region` (categorical, int): user's region
-- `TrafficType` (categorical, int): traffic type
-- `VisitorType` (categorical, object): visitor type (Returning_Visitor or New_Visitor or Other)
-- `Weekend` (categorical, bool): is the visit day a weekend
+**All features**
+
+| Feature                   | Description                                                                                                | Type             |
+|---------------------------|------------------------------------------------------------------------------------------------------------|------------------|
+| `Revenue`                 | TARGET LABEL: Whether the visitor made a purchase (True) or not (False)                                    | Boolean          |
+| `Administrative`          | the number of pages of this type (administarive) that the user visited                                     | Numerical, int   |
+| `Administrative_Duration` | the amount of time spent in this category (administarive) of pages                                         | Numerical, float |
+| `Informational`           | the number of pages of this type (informational) that the user visited                                     | Numerical, int   |
+| `Informational_Duration`  | the amount of time spent in this category (informational) of pages                                         | Numerical, float |
+| `ProductRelated`          | the number of pages of this type (product related) that the user visited                                   | Numerical, int   |
+| `ProductRelated_Duration` | the amount of time spent in this category (product related) of pages                                       | Numerical, float |
+| `BounceRates`             | the percentage of visitors who enter the website through that page and exit without triggering any additional tasks (characteristic of Google Analytics)                  | Numerical, float |
+| `ExitRates`               | the percentage of pageviews on the website that end at that specific page (characteristic of Google Analytics)                    | Numerical, float  |
+| `PageValues`              | the average value of the page averaged over the value of the target page and/or the completion of an eCommerce (characteristic of Google Analytics)                    | Numerical, float |
+| `SpecialDay`              | the closeness of the visiting site to a specific special day (e.g. Mother's Day)                           | Numerical, float |
+| `Month`                   | the month of the year of the visiting site                                                                 | Categorical, object |
+| `OperatingSystems`        | user's operating system                                                                                    | Categorical, int |
+| `Browser`                 | user's browser                                                                                             | Categorical, int |
+| `Region`                  | user's region                                                                                              | Categorical, int |
+| `TrafficType`             | the type of traffic the brought the visitor to the website                                                 | Categorical, int |
+| `VisitorType`             | visitor type (Returning_Visitor or New_Visitor or Other)                                                   | Categorical, object |
+| `Weekend`                 | is the visit day a weekend                                                                                 | Categorical, boolean |
 
 ## Analysis
 Coming soon
