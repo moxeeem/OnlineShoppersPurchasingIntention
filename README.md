@@ -19,7 +19,7 @@ The purpose of the project is to conduct exploratory data analysis, build one or
 - [License](#license)
 
 ## Files
-Coming soon
+- [EDA.ipynb](https://github.com/moxeeem/OnlineShoppersPurchasingIntention/blob/eda/EDA.ipynb): Jupyter Notebook with Exploratory Data Analysis
 
 ## Dataset
 We obtained the dataset for our analysis from the [UC Irvine Machine Learning Repository](https://archive-beta.ics.uci.edu/), which provides the original dataset at this [link](https://archive-beta.ics.uci.edu/ml/datasets/online+shoppers+purchasing+intention+dataset).
@@ -33,7 +33,7 @@ The dataset consists of rows that represent visit "sessions" of users on an e-co
 
 | Feature                   | Description                                                                                                | Type             |
 |---------------------------|------------------------------------------------------------------------------------------------------------|------------------|
-| `Revenue`                 | TARGET LABEL: Whether the visitor made a purchase (True) or not (False)                                    | Boolean          |
+| `Revenue`                 | TARGET LABEL: whether the visitor made a purchase (True) or not (False)                                    | Categorical, boolean   |
 | `Administrative`          | the number of pages of this type (administarive) that the user visited                                     | Numerical, int   |
 | `Administrative_Duration` | the amount of time spent in this category (administarive) of pages                                         | Numerical, float |
 | `Informational`           | the number of pages of this type (informational) that the user visited                                     | Numerical, int   |
@@ -53,7 +53,9 @@ The dataset consists of rows that represent visit "sessions" of users on an e-co
 | `Weekend`                 | is the visit day a weekend                                                                                 | Categorical, boolean |
 
 ## Analysis
-Coming soon
+In this project, we perform primary data analysis and research before starting modeling and prediction. We use EDA to identify the main characteristics of our data and test the assumptions on which we will build our model.
+
+During EDA, we analyze the distribution of data, identify outliers, duplicates, missing values, and plot graphs to visually assess the relationships between different variables. We also analyze the values of various correlations and the results of Pearson's chi-squared test.
 
 ## ML Model
 Coming soon
