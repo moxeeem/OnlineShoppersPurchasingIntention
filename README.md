@@ -19,7 +19,12 @@ The purpose of the project is to conduct exploratory data analysis, build one or
 - [License](#license)
 
 ## Files
-- [EDA.ipynb](https://github.com/moxeeem/OnlineShoppersPurchasingIntention/blob/eda/EDA.ipynb): Jupyter Notebook with Exploratory Data Analysis
+- [EDA.ipynb](https://github.com/moxeeem/OnlineShoppersPurchasingIntention/blob/main/EDA.ipynb) : Jupyter Notebook with Exploratory Data Analysis
+- [pipeline.ipynb](https://github.com/moxeeem/OnlineShoppersPurchasingIntention/blob/main/pipeline.ipynb) : Jupyter Notebook with ML pipeline
+- [dashboard.html](https://github.com/moxeeem/OnlineShoppersPurchasingIntention/blob/main/dashboard.html) : HTML ExplainerDashboard
+- [Dockerfile](https://github.com/moxeeem/OnlineShoppersPurchasingIntention/blob/main/Dockerfile) : File for creating a Docker Container with ExplainerDashboard 
+- [app.py](https://github.com/moxeeem/OnlineShoppersPurchasingIntention/blob/main/app/app.py) : File that generates the dashboard
+- [dashboard.py](https://github.com/moxeeem/OnlineShoppersPurchasingIntention/blob/main/app/dashboard.py) : File that launches the dashboard
 
 ## Dataset
 We obtained the dataset for our analysis from the [UC Irvine Machine Learning Repository](https://archive-beta.ics.uci.edu/), which provides the original dataset at this [link](https://archive-beta.ics.uci.edu/ml/datasets/online+shoppers+purchasing+intention+dataset).
@@ -58,23 +63,29 @@ In this project, we perform primary data analysis and research before starting m
 During EDA, we analyze the distribution of data, identify outliers, duplicates, missing values, and plot graphs to visually assess the relationships between different variables. We also analyze the values of various correlations and the results of Pearson's chi-squared test.
 
 ## ML Model
-Coming soon
+In this project, we have built several models that solve the problem.
+
+We settled on the NB model with hyperparameters selected by GridSearchCV. f1-score was chosen as the target metric. Also, the variables were encoded using ONE and standardized using StandardScaler.
 
 ## Deployment
-Coming soon
+In this project, we built an interactive dashboard and wrapped it in a docker container.
+
+Using Docker, we created a Dockerfile that contains all the necessary instructions to build a container with our dashboard.
 
 ## How to Install and Run the Project
 Coming soon
 
+
 ## How to Use the Project
-Coming soon
+This dashboard allows you to investigate SWAP values, permutation importances, interaction effect, partial dependence plots, all kinds of performance plots, 
+and even individual decision trees inside a random forest.
 
 ## Include Credits
 
 ### Author
-- Maxim Ivanov - [GitHub](https://github.com/moxeeem)
+- Maxim Ivanov - [GitHub](https://github.com/moxeeem), [Telegram](https://t.me/fwznn_ql1d_8)
 
 This project was completed as part of the ["Разведочный анализ данных и основы разработки"](https://stepik.org/course/177213) course offered by [AI Education](https://stepik.org/users/628121134).
 
 ## License
-Coming soon
+This project is licensed under the MIT license. For more information, see the [LICENSE](/LICENSE) file.
