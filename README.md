@@ -73,7 +73,27 @@ In this project, we built an interactive dashboard and wrapped it in a docker co
 Using Docker, we created a Dockerfile that contains all the necessary instructions to build a container with our dashboard.
 
 ## How to Install and Run the Project
-Coming soon
+Please note that you need to have Docker on your computer to perform the above steps. If you do not have it, please install Docker before starting the process.
+
+To start the dashboard, follow these steps:
+
+1. Open a terminal on your computer.
+
+2. Download the image from Docker Hub by running the command:
+```
+$ docker pull moxeeeem/explainerdashboard
+```
+This will download the dashboard image to your computer.
+
+3. Pull up the container from the downloaded image by running the command:
+```
+$ docker run moxeeeem/explainerdashboard
+```
+This will create and start the dashboard container.
+
+4. A link will appear in the terminal. Copy this link and paste it into the address bar of your web browser.
+
+After clicking the link, you will see the dashboard open in your web browser. You can now view and use the dashboard to analyze the data.
 
 
 ## How to Use the Project
