@@ -1,5 +1,5 @@
 # 🛍️ Online Shoppers Purchasing Intention
-[![readme.jpg](https://anopic.ag/WvbX82bzV78Bf6eN2rSZr9hhPvu3mD85D4YeV5PB.jpg)](https://anopic.ag/WvbX82bzV78Bf6eN2rSZr9hhPvu3mD85D4YeV5PB.jpg)
+![img.png](https://github.com/moxeeem/OnlineShoppersPurchasingIntention/blob/main/img.png)
 
 ## Project Description
 In this project, we use machine learning models to analyze e-commerce data in order to determine the probability of a website visitor making a purchase.
